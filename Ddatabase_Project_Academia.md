@@ -30,14 +30,14 @@ DDL (Data Definition Language)  <br> <br>
 
 The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
-# Creating a MySQL database for online learning platform named Academia <br> <br>
+##### Creating a MySQL database for online learning platform named Academia <br> <br>
 
 * CREATE DATABASE Academia;
 
 
 
 
-# This table will store information about all users (students, instructors and admins) <br> <br>
+##### This table will store information about all users (students, instructors and admins) <br> <br>
 
 * CREATE TABLE Users (
     UserID INT AUTO_INCREMENT PRIMARY KEY,
@@ -51,7 +51,7 @@ The following instructions were written in the scope of CREATING the structure o
  <br> <br>
 
 
-# This table will store information about the available courses on the platform
+##### This table will store information about the available courses on the platform
 * CREATE TABLE Courses (
     CourseID INT AUTO_INCREMENT PRIMARY KEY,
     CourseName VARCHAR(100) NOT NULL,
@@ -62,7 +62,7 @@ The following instructions were written in the scope of CREATING the structure o
 );
  <br> <br>
 
-# This table records which students are enrolled in which courses
+##### This table records which students are enrolled in which courses
 
 * CREATE TABLE Enrollments (
     EnrollmentID INT AUTO_INCREMENT PRIMARY KEY,
@@ -75,7 +75,7 @@ The following instructions were written in the scope of CREATING the structure o
 
 
  <br> <br>
-# This table will store information about assignments for each course
+##### This table will store information about assignments for each course
 * CREATE TABLE Assignments (
     AssignmentID INT AUTO_INCREMENT PRIMARY KEY,
     CourseID INT,
@@ -87,7 +87,7 @@ The following instructions were written in the scope of CREATING the structure o
 );
 
  <br> <br>
-# This table will store the submissions of assignments of the students
+##### This table will store the submissions of assignments of the students
 * CREATE TABLE Submissions (
     SubmissionID INT AUTO_INCREMENT PRIMARY KEY,
     AssignmentID INT,
