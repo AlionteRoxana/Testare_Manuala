@@ -119,12 +119,13 @@ In order to be able to use the database I populated the tables with various data
 
 
 
-
-Below you can find all the insert instructions that were created in the scope of this project:
- <br> <br> <br> <br> <br> <br> 
-
-
+ <br> <br>  
  
+### Below you can find all the insert instructions that were created in the scope of this project:
+ <br> <br> <br> <br> <br> 
+
+
+  <
 
 #### Examples of how to insert data into Users table <br> <br>  
 * INSERT INTO Users (Username, Password, Email, FullName, UserType)
@@ -132,7 +133,7 @@ VALUES
 ('maria_verga', 'password111', 'maria@gmail.com', 'Maria Verga', 'Student'),
 ('cris_marton', 'password123', 'cris@gmail.com', 'Cris Marton', 'Instructor'),
 ('roxana_admin', 'adminpassword', 'admin@yahoo.com', 'Admin Roxana', 'Admin');
-<br> <br>  
+<br> 
 
 
 #### Examples of how to insert data into Courses table  <br> <br>  
@@ -179,18 +180,19 @@ De asemenea, incercati sa acoperiti situatia in care inserati mai multe randuri 
 
 
 
+ <br> <br>  
+
+After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:  <br> <br>  
 
 
-After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:
-
-
-
+ 
 instructiunile de UPDATE pe care le-ati scris folosind filtrarile necesare astfel incat sa actualizati doar datele de care aveti nevoie
 
 
 
 
-
+ <br> <br>    <br> <br>    
+ 
 
 ### DQL (Data Query Language)   <br> <br>    <br> <br>  
 
