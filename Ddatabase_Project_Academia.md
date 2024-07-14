@@ -1,11 +1,11 @@
-## Database Project for **Academia** <br> <br> <br>  <br>
-The scope of this project is to use all the SQL knowledge gained throught the Software Testing course and apply them in practice.
+## Database Project for **Academia** <br> <br> <br> 
+The scope of this project is to use all the SQL knowledge gained throught the Software Testing course and apply them in practice. <br> 
 
 Application under test: **Academia**
 
 Tools used: MySQL Workbench
 
-Database description:  **Academia** is a virtual platform where students can register and learn for free from the materials recorded on the academy's website and also the students can enroll to live and paid courses with active participation. <br> <br>
+Database description:  **Academia** is a virtual platform where students can register and learn for free from the materials recorded on the academy's website and also the students can enroll to live and paid courses with active participation. <br> <br> <br> <br>
 Database Schema
 
 You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them. <br>
