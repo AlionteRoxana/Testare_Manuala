@@ -15,10 +15,13 @@ You can find below the database schema that was generated through Reverse Engine
   The tables are connected in the following way: <br> <br>
 
 **Users** is connected with **Courses** through a **one to many or one to one** relationship which was implemented through **Users.UsersID** as a primary key and **Courses.InstructorID** as a foreign key <BR> <BR>
-**nume tabela 3** is connected with **nume tabela 4** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key
-**nume tabela 5** is connected with **nume tabela 6** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key
-...........
-**nume tabela n** is connected with **nume tabela n+1** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key <br> <br> <br> <br> <br>
+
+**nume tabela 3** is connected with **nume tabela 4** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key <BR> <BR>
+
+**nume tabela 5** is connected with **nume tabela 6** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key <BR> <BR><br> <br> <br> <br> <br>
+
+
+
 
 ### Database Queries <br> <br> <br> <br>
 DDL (Data Definition Language)  <br> <br>
