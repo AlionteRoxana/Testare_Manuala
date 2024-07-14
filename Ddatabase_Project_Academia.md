@@ -9,7 +9,7 @@ Tools used: MySQL Workbench <br>
 Database description:  **Academia** is a virtual platform where students can register and learn for free from the materials recorded on the academy's website and also the students can enroll to live and paid courses with active participation. <br> <br> <br> <br>
 ### Database Schema
 
-You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them. <br>
+You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them. <br> <br> <br> 
 The tables are connected in the following way: <br> <br>
 
 
