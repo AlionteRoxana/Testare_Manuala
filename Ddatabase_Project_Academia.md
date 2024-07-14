@@ -129,6 +129,7 @@ VALUES
 ('python', 'mongodb', 2);
 
 <br> 
+
 #### Enroll Students in Courses <br> <br>  
 INSERT INTO Enrollments (CourseID, StudentID)
 VALUES 
@@ -145,6 +146,7 @@ VALUES
 
 
 <br> 
+
 #### Submitting Assignments  <br>  
 INSERT INTO Submissions (AssignmentID, StudentID, SubmissionDate, Grade, Feedback)
 VALUES 
