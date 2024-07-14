@@ -10,7 +10,8 @@ Database description:  **Academia** is a virtual platform where students can reg
 ### Database Schema
 
 You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them. <br> <br> <br> <br> <br> <br>
-   URMEAZA SA INSEREZ DON'T KILL ME INCERC SA MA INCADREZ IN DEADLINE CU STRUCTURA MACAR, THANKS FOR UNDERSTANDING!!!
+
+   
   
   The tables are connected in the following way: <br> <br>
 
