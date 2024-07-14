@@ -25,10 +25,77 @@ You can find below the database schema that was generated through Reverse Engine
 
 
 ### Database Queries <br> <br> <br> <br>
+
 DDL (Data Definition Language)  <br> <br>
+
 The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
-Inserati aici toate instructiunile de CREATE pe care le-ati scris, atat create database cat si create table
+/*Creating a MySQL database for online learning platform named Academia */
+CREATE DATABASE Academia;
+
+
+
+
+# This table will store information about all users (students, instructors, and admins)
+CREATE TABLE Users (
+    UserID INT AUTO_INCREMENT PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL UNIQUE,
+    Password VARCHAR(255) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    FullName VARCHAR(100),
+    UserType ENUM('Student', 'Instructor', 'Admin') NOT NULL,
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+#This table will store information about the available courses on the platform
+CREATE TABLE Courses (
+    CourseID INT AUTO_INCREMENT PRIMARY KEY,
+    CourseName VARCHAR(100) NOT NULL,
+    Description TEXT,
+    InstructorID INT,
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (InstructorID) REFERENCES Users(UserID)
+);
+
+
+#This table records which students are enrolled in which courses
+CREATE TABLE Enrollments (
+    EnrollmentID INT AUTO_INCREMENT PRIMARY KEY,
+    CourseID INT,
+    StudentID INT,
+    EnrollmentDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (CourseID) REFERENCES Courses(CourseID),
+    FOREIGN KEY (StudentID) REFERENCES Users(UserID)
+);
+
+
+
+# This table will store information about assignments for each course
+CREATE TABLE Assignments (
+    AssignmentID INT AUTO_INCREMENT PRIMARY KEY,
+    CourseID INT,
+    Title VARCHAR(100) NOT NULL,
+    Description TEXT,
+    DueDate DATE,
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
+);
+
+# This table will store the submissions of assignments of the students
+CREATE TABLE Submissions (
+    SubmissionID INT AUTO_INCREMENT PRIMARY KEY,
+    AssignmentID INT,
+    StudentID INT,
+    SubmissionDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    Grade DECIMAL(5, 2),
+    Feedback TEXT,
+    FOREIGN KEY (AssignmentID) REFERENCES Assignments(AssignmentID),
+    FOREIGN KEY (StudentID) REFERENCES Users(UserID)
+);
+
+
 
 After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:<br> <br><br> <br>
 
