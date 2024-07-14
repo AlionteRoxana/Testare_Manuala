@@ -113,7 +113,7 @@ In order to be able to use the database I populated the tables with various data
 Below you can find all the insert instructions that were created in the scope of this project:
  <br> <br> <br> <br> <br> <br> 
 
-#### Examples of how to insert data into Users table # Examples of how to insert data into Users table <br> <br>  
+#### Examples of how to insert data into Users table <br> <br>  
 INSERT INTO Users (Username, Password, Email, FullName, UserType)
 VALUES 
 ('maria_verga', 'password111', 'maria@gmail.com', 'Maria Verga', 'Student'),
