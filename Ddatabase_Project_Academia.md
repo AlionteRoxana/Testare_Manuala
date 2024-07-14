@@ -67,5 +67,5 @@ Inserati aici toate instructiunile de SELECT pe care le-ati scris folosind filtr
 Conclusions  <br> <br> <br>
 
      
-     I created a database for and this way I have been learning to create tables, populate them with data, make connections between tables, update some information, delete some data and return the data both at once and with various filters. 
+     I have created the database for an online learning platform named Academia and this way I have been learning to create tables, populate them with data, make connections between tables, update some information, delete some data and return the data both at once and with various filters. 
      Thank you for your time!
