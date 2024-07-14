@@ -1,4 +1,4 @@
-## Database Project for # Academia <br> <br> <br>  <br>
+## Database Project for **Academia** <br> <br> <br>  <br>
 The scope of this project is to use all the SQL knowledge gained throught the Software Testing course and apply them in practice.
 
 Application under test: **Academia**
