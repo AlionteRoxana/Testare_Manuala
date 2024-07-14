@@ -103,7 +103,7 @@ The following instructions were written in the scope of CREATING the structure o
  <br> <br>  <br> <br>  <br> 
 After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:<br> <br><br> <br>
 
-Inserati aici toate instructiunile de ALTER pe care le-ati scris. Incercati sa includeti instructiuni cat mai variate cum ar fi: - schimbare nume tabela - adaugare sau stergere coloana - redenumire coloana - adaugare proprietati coloana (ex: adaugare auto-increment) - modificare proprietati coloana (ex: modificare tip de data, modificare pozitie coloana etc) - adaugare cheie primara sau secundara (daca nu a fost deja adaugata la crearea tabelei)
+- schimbare nume tabela - adaugare sau stergere coloana - redenumire coloana - adaugare proprietati coloana (ex: adaugare auto-increment) - modificare proprietati coloana (ex: modificare tip de data, modificare pozitie coloana etc)
   <br> <br>  <br> <br>  <br> <br>
   
 DML (Data Manipulation Language)  <br> <br>  <br> <br>  <br> 
@@ -119,7 +119,7 @@ VALUES
 ('maria_verga', 'password111', 'maria@gmail.com', 'Maria Verga', 'Student'),
 ('cris_marton', 'password123', 'cris@gmail.com', 'Cris Marton', 'Instructor'),
 ('roxana_admin', 'adminpassword', 'admin@yahoo.com', 'Admin Roxana', 'Admin');
-<br> <br>  <br> <br>
+<br> <br>  
 
 
 #### Examples of how to insert data into Courses table  <br> <br>  
@@ -128,14 +128,14 @@ VALUES
 ('mysql', 'cybersec', 2),
 ('python', 'mongodb', 2);
 
-<br> <br>  <br> <br>
+<br> <br> 
 #### Enroll Students in Courses <br> <br>  
 INSERT INTO Enrollments (CourseID, StudentID)
 VALUES 
 (1, 1),
 (2, 1);
 
-<br> <br>  <br> <br>
+<br> <br> 
 
 #### Create Assignments  <br> <br>  
 INSERT INTO Assignments (CourseID, Title, Description, DueDate)
@@ -144,19 +144,20 @@ VALUES
 (2, 'python basics', 'mongo db basics', '2024-08-15');
 
 
-<br> <br>  <br> <br>
+<br> <br>  
 #### Submitting Assignments  <br> <br>  
 INSERT INTO Submissions (AssignmentID, StudentID, SubmissionDate, Grade, Feedback)
 VALUES 
 (1, 1, '2024-07-14', 85.5, 'Good job!'),
 (2, 1, '2024-07-13', 90.0, 'Excellent work!');
-<br> <br>  <br> <br>
-/* We have one student more, his name is Marcel
-so we have to add another entry to our database */
+<br> <br>  
+
+ We have one student more, his name is Marcel
+so we have to add another entry to our database
 INSERT INTO Users (Username, Password, Email, FullName, UserType)
 VALUES ('colegul_Marcel', '12345', 'marcel@yahoo.com', 'Marcel', 'Student');
 
-<br> <br>  <br> <br>
+<br> <br>   <br> <br>  
 
 De asemenea, incercati sa acoperiti situatia in care inserati mai multe randuri in acelasi timp
 
