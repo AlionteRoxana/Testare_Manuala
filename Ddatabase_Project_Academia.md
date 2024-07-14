@@ -128,29 +128,29 @@ VALUES
 ('mysql', 'cybersec', 2),
 ('python', 'mongodb', 2);
 
-<br> <br> 
+<br> 
 #### Enroll Students in Courses <br> <br>  
 INSERT INTO Enrollments (CourseID, StudentID)
 VALUES 
 (1, 1),
 (2, 1);
 
-<br> <br> 
+<br> 
 
-#### Create Assignments  <br> <br>  
+#### Create Assignments  <br>  
 INSERT INTO Assignments (CourseID, Title, Description, DueDate)
 VALUES 
 (1, 'mysql basics', 'cybersec basics', '2024-08-01'),
 (2, 'python basics', 'mongo db basics', '2024-08-15');
 
 
-<br> <br>  
-#### Submitting Assignments  <br> <br>  
+<br> 
+#### Submitting Assignments  <br>  
 INSERT INTO Submissions (AssignmentID, StudentID, SubmissionDate, Grade, Feedback)
 VALUES 
 (1, 1, '2024-07-14', 85.5, 'Good job!'),
 (2, 1, '2024-07-13', 90.0, 'Excellent work!');
-<br> <br>  
+<br>  
 
  We have one student more, his name is Marcel
 so we have to add another entry to our database
