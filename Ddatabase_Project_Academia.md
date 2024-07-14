@@ -9,12 +9,14 @@ Tools used: MySQL Workbench <br>
 Database description:  **Academia** is a virtual platform where students can register and learn for free from the materials recorded on the academy's website and also the students can enroll to live and paid courses with active participation. <br> <br> <br> <br>
 ### Database Schema
 
-You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them. <br> <br> <br> 
-The tables are connected in the following way: <br> <br>
+You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them. <br> <br> <br> <br> <br> <br>
+   URMEAZA SA INSEREZ DON'T KILL ME INCERC SA MA INCADREZ IN DEADLINE CU STRUCTURA MACAR, THANKS FOR UNDERSTANDING!!!
+  
+  The tables are connected in the following way: <br> <br>
 
 
 
-<br> <br> <br> <br>
+<br> <br> 
 **nume tabela 1** is connected with **nume tabela 2** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key
 **nume tabela 3** is connected with **nume tabela 4** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key
 **nume tabela 5** is connected with **nume tabela 6** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key
