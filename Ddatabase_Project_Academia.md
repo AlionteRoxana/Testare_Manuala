@@ -114,7 +114,7 @@ Below you can find all the insert instructions that were created in the scope of
  <br> <br> <br> <br> <br> <br> 
 
 #### Examples of how to insert data into Users table <br> <br>  
-INSERT INTO Users (Username, Password, Email, FullName, UserType)
+* INSERT INTO Users (Username, Password, Email, FullName, UserType)
 VALUES 
 ('maria_verga', 'password111', 'maria@gmail.com', 'Maria Verga', 'Student'),
 ('cris_marton', 'password123', 'cris@gmail.com', 'Cris Marton', 'Instructor'),
@@ -123,7 +123,7 @@ VALUES
 
 
 #### Examples of how to insert data into Courses table  <br> <br>  
-INSERT INTO Courses (CourseName, Description, InstructorID)
+* INSERT INTO Courses (CourseName, Description, InstructorID)
 VALUES 
 ('mysql', 'cybersec', 2),
 ('python', 'mongodb', 2);
@@ -131,7 +131,7 @@ VALUES
 <br> 
 
 #### Enroll Students in Courses <br> <br>  
-INSERT INTO Enrollments (CourseID, StudentID)
+* INSERT INTO Enrollments (CourseID, StudentID)
 VALUES 
 (1, 1),
 (2, 1);
@@ -139,7 +139,7 @@ VALUES
 <br> 
 
 #### Create Assignments  <br>  
-INSERT INTO Assignments (CourseID, Title, Description, DueDate)
+* INSERT INTO Assignments (CourseID, Title, Description, DueDate)
 VALUES 
 (1, 'mysql basics', 'cybersec basics', '2024-08-01'),
 (2, 'python basics', 'mongo db basics', '2024-08-15');
@@ -148,15 +148,15 @@ VALUES
 <br> 
 
 #### Submitting Assignments  <br>  
-INSERT INTO Submissions (AssignmentID, StudentID, SubmissionDate, Grade, Feedback)
+* INSERT INTO Submissions (AssignmentID, StudentID, SubmissionDate, Grade, Feedback)
 VALUES 
 (1, 1, '2024-07-14', 85.5, 'Good job!'),
 (2, 1, '2024-07-13', 90.0, 'Excellent work!');
 <br>  
 
  We have one student more, his name is Marcel
-so we have to add another entry to our database
-INSERT INTO Users (Username, Password, Email, FullName, UserType)
+so we have to add another entry to our database  <br> 
+* INSERT INTO Users (Username, Password, Email, FullName, UserType)
 VALUES ('colegul_Marcel', '12345', 'marcel@yahoo.com', 'Marcel', 'Student');
 
 <br> <br>   <br> <br>  
