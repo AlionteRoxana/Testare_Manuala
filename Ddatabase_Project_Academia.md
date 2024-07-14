@@ -1,7 +1,7 @@
-Database Project for **Inserati aici numele aplicatiei pe care o testati**
+Database Project for **Academia**
 The scope of this project is to use all the SQL knowledge gained throught the Software Testing course and apply them in practice.
 
-Application under test: Inserati aici numele aplicatiei pe care o testati
+Application under test: **Academia**
 
 Tools used: MySQL Workbench
 
