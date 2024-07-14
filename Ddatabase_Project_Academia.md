@@ -22,12 +22,12 @@ The tables are connected in the following way: <br> <br>
 **nume tabela n** is connected with **nume tabela n+1** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key <br> <br> <br> <br> <br>
 
 ### Database Queries <br> <br> <br> <br>
-DDL (Data Definition Language)
+DDL (Data Definition Language)  <br> <br>
 The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
 Inserati aici toate instructiunile de CREATE pe care le-ati scris, atat create database cat si create table
 
-After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
+After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:<br> <br><br> <br>
 
 Inserati aici toate instructiunile de ALTER pe care le-ati scris. Incercati sa includeti instructiuni cat mai variate cum ar fi: - schimbare nume tabela - adaugare sau stergere coloana - redenumire coloana - adaugare proprietati coloana (ex: adaugare auto-increment) - modificare proprietati coloana (ex: modificare tip de data, modificare pozitie coloana etc) - adaugare cheie primara sau secundara (daca nu a fost deja adaugata la crearea tabelei)
 
