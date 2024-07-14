@@ -101,17 +101,30 @@ The following instructions were written in the scope of CREATING the structure o
 
 
  <br> <br>  <br> <br>  <br> 
+ 
 After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:<br> <br><br> <br>
 
 - schimbare nume tabela - adaugare sau stergere coloana - redenumire coloana - adaugare proprietati coloana (ex: adaugare auto-increment) - modificare proprietati coloana (ex: modificare tip de data, modificare pozitie coloana etc)
+- 
   <br> <br>  <br> <br>  <br> <br>
+
+
+
   
 DML (Data Manipulation Language)  <br> <br>  <br> <br>  <br> 
 
+
+
 In order to be able to use the database I populated the tables with various data necessary in order to perform queries and manipulate the data. In the testing process, this necessary data is identified in the Test Design phase and created in the Test Implementation phase.  <br> <br>  <br> <br>
+
+
+
 
 Below you can find all the insert instructions that were created in the scope of this project:
  <br> <br> <br> <br> <br> <br> 
+
+
+ 
 
 #### Examples of how to insert data into Users table <br> <br>  
 * INSERT INTO Users (Username, Password, Email, FullName, UserType)
@@ -163,18 +176,43 @@ VALUES ('colegul_Marcel', '12345', 'marcel@yahoo.com', 'Marcel', 'Student');
 
 De asemenea, incercati sa acoperiti situatia in care inserati mai multe randuri in acelasi timp
 
+
+
+
+
+
 After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:
 
-Inserati aici toate instructiunile de UPDATE pe care le-ati scris folosind filtrarile necesare astfel incat sa actualizati doar datele de care aveti nevoie
 
-DQL (Data Query Language)
+
+instructiunile de UPDATE pe care le-ati scris folosind filtrarile necesare astfel incat sa actualizati doar datele de care aveti nevoie
+
+
+
+
+
+
+### DQL (Data Query Language)   <br> <br>    <br> <br>  
+
 After the testing process, I deleted the data that was no longer relevant in order to preserve the database clean:
 
-Inserati aici toate instructiunile de DELETE pe care le-ati scris folosind filtrarile necesare astfel incat sa stergeti doar datele de care aveti nevoie
 
-In order to simulate various scenarios that might happen in real life I created the following queries that would cover multiple potential real-life situations:
 
-Inserati aici toate instructiunile de SELECT pe care le-ati scris folosind filtrarile necesare astfel incat sa extrageti doar datele de care aveti nevoie Incercati sa acoperiti urmatoarele:
+Iinstructiunile de DELETE pe care le-ati scris folosind filtrarile necesare astfel incat sa stergeti doar datele de care aveti nevoie  <br> <br>   <br> <br>  
+
+
+
+
+
+
+
+ <br> <br>   <br> <br>   <br> <br>  
+
+In order to simulate various scenarios that might happen in real life I created the following queries that would cover multiple potential real-life situations:  <br> <br>   <br> 
+
+
+
+Instructiunile de SELECT pe care le-ati scris folosind filtrarile necesare astfel incat sa extrageti doar datele de care aveti nevoie Incercati sa acoperiti urmatoarele:
 - where
 - AND
 - OR
@@ -188,8 +226,9 @@ Inserati aici toate instructiunile de SELECT pe care le-ati scris folosind filtr
 - group by
 - having
 - OPTIONAL DAR RECOMANDAT: Subqueries - nu au fost in scopul cursului. Puteti sa consultati tutorialul asta si daca nu intelegeti ceva contactati fie trainerul, fie coordonatorul de grupa
+-  <br> <br>    <br> <br>  
 
-Conclusions  <br> <br> <br>
+## Conclusions  <br> <br> <br>
 
      
      I have created the database for an online learning platform named Academia and this way I have been learning to create tables, populate them with data, make connections between tables, update some information, delete some data and return the data both at once and with various filters. 
