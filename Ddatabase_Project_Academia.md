@@ -30,14 +30,16 @@ DDL (Data Definition Language)  <br> <br>
 
 The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
-/*Creating a MySQL database for online learning platform named Academia */
-CREATE DATABASE Academia;
+# Creating a MySQL database for online learning platform named Academia <br> <br>
+
+* CREATE DATABASE Academia;
 
 
 
 
-# This table will store information about all users (students, instructors, and admins)
-CREATE TABLE Users (
+# This table will store information about all users (students, instructors and admins) <br> <br>
+
+* CREATE TABLE Users (
     UserID INT AUTO_INCREMENT PRIMARY KEY,
     Username VARCHAR(50) NOT NULL UNIQUE,
     Password VARCHAR(255) NOT NULL,
@@ -46,11 +48,11 @@ CREATE TABLE Users (
     UserType ENUM('Student', 'Instructor', 'Admin') NOT NULL,
     CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+ <br> <br>
 
 
-
-#This table will store information about the available courses on the platform
-CREATE TABLE Courses (
+# This table will store information about the available courses on the platform
+* CREATE TABLE Courses (
     CourseID INT AUTO_INCREMENT PRIMARY KEY,
     CourseName VARCHAR(100) NOT NULL,
     Description TEXT,
@@ -58,10 +60,11 @@ CREATE TABLE Courses (
     CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (InstructorID) REFERENCES Users(UserID)
 );
+ <br> <br>
 
+# This table records which students are enrolled in which courses
 
-#This table records which students are enrolled in which courses
-CREATE TABLE Enrollments (
+* CREATE TABLE Enrollments (
     EnrollmentID INT AUTO_INCREMENT PRIMARY KEY,
     CourseID INT,
     StudentID INT,
@@ -71,9 +74,9 @@ CREATE TABLE Enrollments (
 );
 
 
-
+ <br> <br>
 # This table will store information about assignments for each course
-CREATE TABLE Assignments (
+* CREATE TABLE Assignments (
     AssignmentID INT AUTO_INCREMENT PRIMARY KEY,
     CourseID INT,
     Title VARCHAR(100) NOT NULL,
@@ -83,8 +86,9 @@ CREATE TABLE Assignments (
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
 );
 
+ <br> <br>
 # This table will store the submissions of assignments of the students
-CREATE TABLE Submissions (
+* CREATE TABLE Submissions (
     SubmissionID INT AUTO_INCREMENT PRIMARY KEY,
     AssignmentID INT,
     StudentID INT,
@@ -96,7 +100,7 @@ CREATE TABLE Submissions (
 );
 
 
-
+ <br> <br>  <br> <br>  <br> 
 After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:<br> <br><br> <br>
 
 Inserati aici toate instructiunile de ALTER pe care le-ati scris. Incercati sa includeti instructiuni cat mai variate cum ar fi: - schimbare nume tabela - adaugare sau stergere coloana - redenumire coloana - adaugare proprietati coloana (ex: adaugare auto-increment) - modificare proprietati coloana (ex: modificare tip de data, modificare pozitie coloana etc) - adaugare cheie primara sau secundara (daca nu a fost deja adaugata la crearea tabelei)
