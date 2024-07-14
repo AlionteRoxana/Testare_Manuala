@@ -13,7 +13,7 @@ You can find below the database schema that was generated through Reverse Engine
 
    
   
- ### The tables are connected in the following way: <br> <br <BR> 
+ #### The tables are connected in the following way: <br> <br <br>
 
 **Users** is connected with **Courses** through a **one to many or one to one** relationship which was implemented through **Users.UsersID** as a primary key and **Courses.InstructorID** as a foreign key <BR> <BR>
 
