@@ -104,13 +104,61 @@ The following instructions were written in the scope of CREATING the structure o
 After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:<br> <br><br> <br>
 
 Inserati aici toate instructiunile de ALTER pe care le-ati scris. Incercati sa includeti instructiuni cat mai variate cum ar fi: - schimbare nume tabela - adaugare sau stergere coloana - redenumire coloana - adaugare proprietati coloana (ex: adaugare auto-increment) - modificare proprietati coloana (ex: modificare tip de data, modificare pozitie coloana etc) - adaugare cheie primara sau secundara (daca nu a fost deja adaugata la crearea tabelei)
+  <br> <br>  <br> <br>  <br> <br>
+  
+DML (Data Manipulation Language)  <br> <br>  <br> <br>  <br> 
 
-DML (Data Manipulation Language)
-In order to be able to use the database I populated the tables with various data necessary in order to perform queries and manipulate the data. In the testing process, this necessary data is identified in the Test Design phase and created in the Test Implementation phase.
+In order to be able to use the database I populated the tables with various data necessary in order to perform queries and manipulate the data. In the testing process, this necessary data is identified in the Test Design phase and created in the Test Implementation phase.  <br> <br>  <br> <br>
 
 Below you can find all the insert instructions that were created in the scope of this project:
+ <br> <br> <br> <br> <br> <br> 
 
-Inserati aici toate instructiunile de INSERT pe care le-ati scris. Incercati sa folositi atat insert pe toate coloanele (fara sa precizati pe ce coloane se face insert) cat si insert pe cateva coloane (care necesita mentionarea explicita a coloanelor pe care se face insert). De asemenea, incercati sa acoperiti situatia in care inserati mai multe randuri in acelasi timp
+#### Examples of how to insert data into Users table # Examples of how to insert data into Users table <br> <br>  
+INSERT INTO Users (Username, Password, Email, FullName, UserType)
+VALUES 
+('maria_verga', 'password111', 'maria@gmail.com', 'Maria Verga', 'Student'),
+('cris_marton', 'password123', 'cris@gmail.com', 'Cris Marton', 'Instructor'),
+('roxana_admin', 'adminpassword', 'admin@yahoo.com', 'Admin Roxana', 'Admin');
+<br> <br>  <br> <br>
+
+
+#### Examples of how to insert data into Courses table  <br> <br>  
+INSERT INTO Courses (CourseName, Description, InstructorID)
+VALUES 
+('mysql', 'cybersec', 2),
+('python', 'mongodb', 2);
+
+<br> <br>  <br> <br>
+#### Enroll Students in Courses <br> <br>  
+INSERT INTO Enrollments (CourseID, StudentID)
+VALUES 
+(1, 1),
+(2, 1);
+
+<br> <br>  <br> <br>
+
+#### Create Assignments  <br> <br>  
+INSERT INTO Assignments (CourseID, Title, Description, DueDate)
+VALUES 
+(1, 'mysql basics', 'cybersec basics', '2024-08-01'),
+(2, 'python basics', 'mongo db basics', '2024-08-15');
+
+
+<br> <br>  <br> <br>
+#### Submitting Assignments  <br> <br>  
+INSERT INTO Submissions (AssignmentID, StudentID, SubmissionDate, Grade, Feedback)
+VALUES 
+(1, 1, '2024-07-14', 85.5, 'Good job!'),
+(2, 1, '2024-07-13', 90.0, 'Excellent work!');
+<br> <br>  <br> <br>
+/* We have one student more, his name is Marcel
+so we have to add another entry to our database */
+INSERT INTO Users (Username, Password, Email, FullName, UserType)
+VALUES ('colegul_Marcel', '12345', 'marcel@yahoo.com', 'Marcel', 'Student');
+
+<br> <br>  <br> <br>
+
+De asemenea, incercati sa acoperiti situatia in care inserati mai multe randuri in acelasi timp
 
 After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:
 
