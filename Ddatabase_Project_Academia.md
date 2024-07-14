@@ -64,5 +64,8 @@ Inserati aici toate instructiunile de SELECT pe care le-ati scris folosind filtr
 - having
 - OPTIONAL DAR RECOMANDAT: Subqueries - nu au fost in scopul cursului. Puteti sa consultati tutorialul asta si daca nu intelegeti ceva contactati fie trainerul, fie coordonatorul de grupa
 
-Conclusions
-Inserati aici o concluzie cu privire la ceea ce ati lucrat, gen lucrurile pe care le-ati invatat, lessons learned, un rezumat asupra a ceea ce ati facut si orice alta informatie care vi se pare relevanta pentru o concluzie finala asupra a ceea ce ati lucrat
+Conclusions  <br> <br> <br>
+
+     
+     I created a database for and this way I have been learning to create tables, populate them with data, make connections between tables, update some information, delete some data and return the data both at once and with various filters. 
+     Thank you for your time!
