@@ -111,7 +111,7 @@ After the database and the tables have been created, a few ALTER instructions we
 
 
   
-DML (Data Manipulation Language)  <br> <br>  <br> <br>  <br> 
+DML (Data Manipulation Language)  <br> <br>  <br> 
 
 
 
@@ -122,7 +122,7 @@ In order to be able to use the database I populated the tables with various data
  <br> <br>  
  
 ### Below you can find all the insert instructions that were created in the scope of this project:
- <br> <br> <br> 
+ <br> 
 
 #### Examples of how to insert data into Users table <br> <br>  
 * INSERT INTO Users (Username, Password, Email, FullName, UserType)
