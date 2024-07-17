@@ -11,7 +11,13 @@ Database description:  **Academia** is a virtual platform where students can reg
 
 You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them. <br> <br> <br> <br> <br> <br>
 
-   
+   ![DIAGRAMA EER](https://github.com/user-attachments/assets/d3126356-c4ef-4918-8a85-3364ff86e22d)
+
+
+<br> <br> <br>
+<br> <br> <br>
+
+
   
  ### The tables are connected in the following way: <br> <br> <br>
 
